@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- HEADER -->
-      <header class="header">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
         <div class="logo-container">
           <a href="./index.html" aria-label="logo" rel="no-referrer no-opener">
             <svg class="logo-dec" width="16" height="16">
@@ -37,19 +37,27 @@
             </svg>
           </a>
         </div>
-        <nav></nav>
-      </header>
-      <!-- #region -->
-      <!-- MAIN -->
-      <main>
-        <section class="hero-section">
+        <nav>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </nav>
+      </div>
+    </header>
+    <!-- #region -->
+    <!-- MAIN -->
+    <main>
+      <section class="hero-section">
+        <div class="container">
           <h1></h1>
           <p></p>
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="./images/herosectionimg2.jpg" alt="woman cut vegetables" />
-        </section>
-        <section class="section-2">
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="container">
           <div class="section-2-container">
             <h2 class="section-2-title">
               To order your
@@ -92,8 +100,10 @@
               Discount up to 40%! Taste the vitamins and keep your health
             </p>
           </div>
-        </section>
-        <section class="section-3">
+        </div>
+      </section>
+      <section class="section-3">
+        <div class="container">
           <h2 class="section-3-title">
             organic <span class="section-3-title-span">vegetables</span>
           </h2>
@@ -159,23 +169,78 @@
             </li>
           </ul>
           <button class="section-3-button">SHOP NOW</button>
-        </section>
-        <section>
-          <h2></h2>
-          <p></p>
-          <ul>
-            <li>
-              <img src="" alt="" />
-              <p></p>
-              <p></p>
+        </div>
+      </section>
+      <section class="section-4">
+        <div class="container">
+          <h2 class="section-4-title">
+            reviews from our <span class="section-4-title-span">customers</span>
+          </h2>
+          <p class="section-4-caption">
+            Words of our customers: impressions and opinions about the quality
+            of our services and the freshness of our products.
+          </p>
+          <ul class="section-4-list">
+            <li class="section-4-item">
+              <img
+                class="section-4-photo"
+                src="./images/image-2.png"
+                alt="photo"
+              />
+              <p class="section-4-item-name">John Wax</p>
+              <p class="section-4-item-caption">
+                These vegetables are my secret to delicious and healthy meals.
+                The quality is always at the highest level, the aroma and taste
+                are enchanting. I advise every fan of real products!
+              </p>
             </li>
           </ul>
-        </section>
-        <section></section>
-      </main>
-      <!-- endregion -->
-      <!-- FOOTER -->
-      <footer>
+        </div>
+      </section>
+      <section class="section-5">
+        <div class="container">
+          <h2 class="section-5-title">
+            Fresh <span class="section-5-title-span">Harvest</span> Box has got
+            you covered
+          </h2>
+          <p class="section-5-title-caption">
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+          <form class="section-5-form">
+            <h3 class="section-5-form-title">
+              Ordering <span class="section-5-form-span">from us</span> is quick
+              and easy! Fill out
+              <span class="section-5-form-span-2">the form below</span> and we
+              will contact you !
+            </h3>
+
+            <label>
+              <input
+                class="section-5-input"
+                type="text"
+                placeholder="Full Name"
+              />
+            </label>
+            <label>
+              <input class="section-5-input" type="text" placeholder="Email"
+            /></label>
+            <textarea
+              class="section-5-textarea"
+              name=""
+              id=""
+              placeholder="Comment"
+            ></textarea>
+            <button class="section-5-button" type="submit">SEND</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- endregion -->
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
         <div class="logo-container">
           <a href="./index.html" aria-label="logo" rel="no-referrer no-opener">
             <svg class="logo-dec" width="16" height="16">
@@ -198,7 +263,21 @@
           <a href=""></a>
           <a href=""></a>
         </address>
-      </footer>
+      </div>
+    </footer>
+    <!-- MODAL -->
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <svg class="close-icon" width="32" height="32">
+          <use href="./images/svgicons/icons.svg#icon-Vector-1"></use>
+        </svg>
+        <nav class="navigation">
+          <a class="modal-link">How it works</a>
+          <a class="modal-link">Vegetables</a>
+          <a class="modal-link">Reviews</a>
+        </nav>
+        <button class="modal-button">Shop now</button>
+      </div>
     </div>
     <script src="./main.js" type="module"></script>
   </body>
